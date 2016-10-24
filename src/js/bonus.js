@@ -3,6 +3,29 @@ import {it, expect} from "./test_lib";
 // Constructors
 // Only add code to *THIS* section!
 
+function Human (options) {
+var options = options || {};
+this.alertness = .05;
+this.hasCoffee = false;
+this.needsCoffee = true;
+};
+
+function Coffee (options) {
+  this.full = true;
+  // this.
+
+};
+
+Human.prototype.buy = function (x) {
+  this.coffee = x;
+  this.hasCoffee = true;
+}
+Human.prototype.drink = function () {
+  this.coffee.full = false;
+  this.alertness = .35;
+  this.coffee.empty = false;
+  
+}
 ///
 ///
 ///

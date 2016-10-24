@@ -1,23 +1,25 @@
 import {it, expect} from "./test_lib";
 import { Dog } from "./constructors/dog";
-import { Person } from "./constructors/person";
+import { Person as Human } from "./constructors/person";
 
 // Uncomment the line below for Hard Mode
 // Only do this *AFTER* the Normal Mode is finished!
 
-// import {coffee, human} from "./bonus";
+import {coffee, human} from "./bonus";
 
 // Do not ADD or MODIFY code below this line :)
 // Write your code in the constructor files! (dog.js and person.js)
 // Dogs
+
 let sadie = new Dog({
   color: 'black',
-  hungry: false
+  hungry: false,
 });
 
 let moonshine = new Dog({
   color: 'blue-red'
 });
+
 
 let atticus = new Dog();
 
