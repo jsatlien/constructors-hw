@@ -12,20 +12,22 @@ this.needsCoffee = true;
 
 function Coffee (options) {
   this.full = true;
-  // this.
 
 };
 
 Human.prototype.buy = function (x) {
   this.coffee = x;
   this.hasCoffee = true;
-}
+  this.needsCoffee = false;
+};
 Human.prototype.drink = function () {
   this.coffee.full = false;
-  this.alertness = .35;
+  this.alertness += .35;
   this.coffee.empty = false;
-  
-}
+  if (this.alertness > .9) {
+    this.coffee.empty = true;
+  };
+};
 ///
 ///
 ///
